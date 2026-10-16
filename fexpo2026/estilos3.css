@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f8e9;
+    color: #29452b;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: #386641;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+section {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #588157;
+}
+
+.imagenes-stand img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.mi-video {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}

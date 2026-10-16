@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #63f0c8, #3fbdbc);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(to right, #205c12, #4cc29c);
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+header .logo {
+    height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* TEXTO EN MOVIMIENTO */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 12s linear infinite;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* INTRODUCCION */
+.introduccion {
+    background: rgba(224, 231, 255, 0.9);
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.introduccion p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* SECCION DEL NEGOCIO */
+.stand {
+    background: rgba(224, 231, 255, 0.9);
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stand h2 {
+    font-size: 2.5rem;
+    color: #205c12;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.stand h3 {
+    font-size: 1.5rem;
+    color: #278e70;
+    margin-bottom: 20px;
+}
+
+/* IMAGENES DEL NEGOCIO */
+.imagenes-stand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.imagenes-stand img {
+    width: 30%;
+    min-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagenes-stand img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* DESCRIPCION DEL NEGOCIO */
+.stand p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 18px 0;
+}
+
+/* VIDEO */
+.video-stand {
+    display: block;
+    width: 85%;
+    max-width: 700px;
+    height: auto;
+    margin: 25px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #205c12;
+    color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* TABLETAS */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .logo {
+        height: 200px;
+        width: auto;
+    }
+
+    .marquee {
+        font-size: 1.2rem;
+    }
+
+    .introduccion,
+    .stand {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .imagenes-stand {
+        gap: 15px;
+    }
+
+    .imagenes-stand img {
+        width: 45%;
+        min-width: 0;
+        height: 220px;
+    }
+
+    .video-stand {
+        width: 100%;
+    }
+
+    .stand h2 {
+        font-size: 2rem;
+    }
+
+    .stand h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header .logo {
+        height: auto;
+        max-height: 180px;
+        max-width: 100%;
+    }
+
+    .marquee {
+        font-size: 1rem;
+    }
+
+    .introduccion,
+    .stand {
+        width: 94%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .introduccion p,
+    .stand p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .imagenes-stand {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagenes-stand img {
+        width: 100%;
+        height: 230px;
+        min-width: 0;
+        object-fit: contain;
+    }
+
+    .stand h2 {
+        font-size: 1.8rem;
+    }
+
+    .stand h3 {
+        font-size: 1.2rem;
+    }
+
+    .video-stand {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    
+    .mi-video 
+    {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+
+}

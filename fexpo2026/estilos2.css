@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf2f8;
+    color: #382044;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: #57246b;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #a044a5;
+}
+
+.imagenes-stand img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.mi-video {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
